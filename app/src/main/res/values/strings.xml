@@ -1,0 +1,28 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Living in Germany AR</string>
+    <string name="homeButton">Home</string>
+    <string name="score">Score: <xliff:g example="0" id="startScore">%d</xliff:g></string>
+    <string name="questionTxtView">Question</string>
+    <string name="Choice1TxtView">Choice 1</string>
+    <string name="Choice2TxtView">Choice 2</string>
+    <string name="Choice3TxtView">Choice 3</string>
+    <string name="Choice4TxtView">Choice 4</string>
+    <string name="wrongAnswer">Sorry, your answer is wrong!</string>
+    <string name="rightAnswer">Awesome! Your answer is correct.</string>
+    <string name="tryAgain">Please try again.</string>
+    <string name="newGameMessage">You have  <xliff:g example="0" id="score">%d</xliff:g>correct answers and <xliff:g example="0" id="failed">%d</xliff:g> failed attempts.\nDo you want to start new Game?</string>
+    <string name="closeAppMessage">You have  <xliff:g example="0" id="score">%d</xliff:g>correct answers and <xliff:g example="0" id="failed">%d</xliff:g> failed attempts.\nDo you want to close the Application?</string>
+    <string name="newGameButton">New Game</string>
+    <string name="backButton">Back</string>
+    <string name="exitButton">Exit</string>
+    <string name="homeWelcomeMessage">Naturalization Test\nYou are welcome !</string>
+    <string name="testSelection">Please select the Quiz you want to play:</string>
+    <string name="mainTestTitle">Question - Answer:</string>
+    <string name="mainTest">This is the main test, you have 290 Questions to answer, each question has 4 choices, one of them is correct.</string>
+    <string name="imagesTestTitle">Images Test:</string>
+    <string name="imagesTest">In this test, you have an Image and a question about it, each question has 4 choices. The test has only 10 images.</string>
+    <string name="title_activity_images_test">Images Test</string>
+    <string name="main_activity_title">Main Test</string>
+    <string name="homeWelcomeMessageLand">Naturalization Test &#8230; You are welcome !</string>
+
+</resources>

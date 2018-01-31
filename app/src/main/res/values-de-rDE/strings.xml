@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Das Leben in Deutschland</string>
+    <string name="homeButton">Home</string>
+    <string name="score">Ergebnis: <xliff:g example="0" id="startScore">%d</xliff:g></string>
+    <string name="questionTxtView">Frage</string>
+    <string name="Choice1TxtView">Wahl 1</string>
+    <string name="Choice2TxtView">Wahl 2</string>
+    <string name="Choice3TxtView">Wahl 3</string>
+    <string name="Choice4TxtView">Wahl 4</string>
+    <string name="wrongAnswer">Ups, Ihre Antwort ist falsch!</string>
+    <string name="rightAnswer">Super! Ihre Antwort ist richtig.</string>
+    <string name="tryAgain">Bitte, versuchen Sie noch mal!</string>
+    <string name="newGameMessage">Sie haben  <xliff:g example="0" id="score">%d</xliff:g>richtige Antworten und <xliff:g example="0" id="failed">%d</xliff:g> erfolglose Versuche.\nMöchten Sie ein neues Spiel beginnen?</string>
+    <string name="closeAppMessage">Sie haben  <xliff:g example="0" id="score">%d</xliff:g>richtige Antworten und <xliff:g example="0" id="failed">%d</xliff:g> erfolglose Versuche.\nMöchten Sie die App beenden?</string>
+    <string name="newGameButton">Neues Spiel</string>
+    <string name="backButton">Zurück</string>
+    <string name="exitButton">Beenden</string>
+    <string name="homeWelcomeMessage">Einbürgerungstest\nWillkommen!</string>
+    <string name="testSelection">Wählen Sie bitte einen Test!</string>
+    <string name="mainTestTitle">Frage und Antwort</string>
+    <string name="mainTest">Sie haben in diesem Test 290 Fragen zu antworten, jede Frage hat 4 Wahlen, eine ist richtig.</string>
+    <string name="imagesTestTitle">Bilder-Test</string>
+    <string name="imagesTest">Hier haben Sie ein Bild und eine Frage, jede Frage hat 4 Wahlen. Der Test hat nur 10 Bilder.</string>
+    <string name="title_activity_images_test">Bilder Test</string>
+    <string name="main_activity_title">Haupt-Test</string>
+    <string name="homeWelcomeMessageLand">Einbürgerungstest &#8230; Willkommen!</string>
+</resources>

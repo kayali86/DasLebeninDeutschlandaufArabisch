@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">الحياة في المانيا بالعربي</string>
+    <string name="homeButton">الصفحة الرئيسية</string>
+    <string name="score">النقاط: <xliff:g example="0" id="startScore">%d</xliff:g></string>
+    <string name="questionTxtView">سؤال</string>
+    <string name="Choice1TxtView">الاختيار الأول</string>
+    <string name="Choice2TxtView">الاختيار الثاني</string>
+    <string name="Choice3TxtView">الاختيار الثالث</string>
+    <string name="Choice4TxtView">الاختيار الرابع</string>
+    <string name="wrongAnswer">عذرا, الإجابة خاطئة!</string>
+    <string name="rightAnswer">رائع, إجابة صحيحة.</string>
+    <string name="tryAgain">حاول مرة أخرى من فضلك.</string>
+    <string name="newGameMessage">لديك  <xliff:g example="0" id="score">%d</xliff:g>إجابة صحيحة و <xliff:g example="0" id="failed">%d</xliff:g> محاولة خاطئة. هل تريد حقا بدء لعبة جديدة?</string>
+    <string name="closeAppMessage">لديك  <xliff:g example="0" id="score">%d</xliff:g>إجابة صحيحة و <xliff:g example="0" id="failed">%d</xliff:g>محاولة خاطئة. هل تريد حقا إغلاق التطبيق? </string>
+    <string name="newGameButton">لعبة جديدة</string>
+    <string name="backButton">رجوع</string>
+    <string name="exitButton">إغلاق التطبيق</string>
+    <string name="testSelection">من فضلك, اختر الاختبار الذي تود البدء به:</string>
+    <string name="mainTestTitle">سؤال و جواب</string>
+    <string name="mainTest">الاختبار الأساسي, لديك هنا 290 سؤال و لكل سؤال أربعة اختيارات واحدة منهم صحيحة.</string>
+    <string name="imagesTestTitle">اختبار الصور:</string>
+    <string name="imagesTest">في هذا الاختبار لديك صورة و سؤال حولها, لكل سؤال أربع خيارات. الاختبار يحتوي على عشرة صور فقط.</string>
+    <string name="title_activity_images_test">اختبار الصور</string>
+    <string name="homeWelcomeMessage">أسئلة الامتحان السياسي الألماني\nأهلا و سهلا بك</string>
+    <string name="main_activity_title">الاختبار الرئيسي</string>
+    <string name="homeWelcomeMessageLand">أسئلة الامتحان السياسي الألماني &#8230; أهلا و سهلا بك</string>
+</resources>

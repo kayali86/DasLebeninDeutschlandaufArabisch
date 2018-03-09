@@ -1,8 +1,10 @@
 package com.example.android.daslebenindeutschlandaufarabisch;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.AlertDialog;
 import android.view.Gravity;
@@ -142,7 +144,7 @@ public class ImagesTestActivity extends AppCompatActivity {
 
 // Update views to take the new question
     private void updateQuestion(int num) {
-        imageV.setImageDrawable(getDrawable(imageNR [num]));
+        imageV.setImageDrawable(ContextCompat.getDrawable(getApplicationContext(), imageNR [num]));
         imagesQuestion.setText(mQuestionsClass.getImagesQuestion(num));
         imagesQuestionAr.setText(mQuestionsClass.getImagesQuestionAr(num));
         imagesAnswer1.setText(mQuestionsClass.getImagesChoice1(num));
@@ -209,7 +211,7 @@ public class ImagesTestActivity extends AppCompatActivity {
     public void closeApp(View view) {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(ImagesTestActivity.this);
         alertDialogBuilder
-                .setMessage(getString(R.string.newGameMessage, mQuestionsClass.getImagesScore(), mQuestionsClass.getImagesFailedAttempts()))
+                .setMessage(getString(R.string.closeAppMessage, mQuestionsClass.getImagesScore(), mQuestionsClass.getImagesFailedAttempts()))
                 .setCancelable(false)
                 .setPositiveButton(getString(R.string.exitButton),
                         new DialogInterface.OnClickListener() {

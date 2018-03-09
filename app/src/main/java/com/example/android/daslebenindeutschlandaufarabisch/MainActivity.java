@@ -217,7 +217,7 @@ public class MainActivity extends AppCompatActivity {
     public void closeApp(View view){
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(MainActivity.this);
         alertDialogBuilder
-                .setMessage(getString(R.string.newGameMessage, mQuestions.getScore(),mQuestions.getFailedAttempts()))
+                .setMessage(getString(R.string.closeAppMessage, mQuestions.getScore(),mQuestions.getFailedAttempts()))
                 .setCancelable(false)
                 .setPositiveButton(getString(R.string.exitButton),
                         new DialogInterface.OnClickListener() {

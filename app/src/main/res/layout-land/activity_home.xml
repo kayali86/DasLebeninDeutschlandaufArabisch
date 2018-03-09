@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/home_background"
+    android:background="@drawable/background"
     tools:context="com.example.android.daslebenindeutschlandaufarabisch.HomeActivity">
 
     <TextView
@@ -68,7 +68,7 @@
 
             <ImageView
                 android:layout_width="90dp"
-                android:layout_height="90dp"
+                android:layout_height="match_parent"
                 android:layout_weight="0"
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="12dp"
@@ -119,7 +119,7 @@
 
         <ImageView
             android:layout_width="90dp"
-            android:layout_height="90dp"
+            android:layout_height="match_parent"
             android:layout_weight="0"
             android:layout_marginRight="8dp"
             android:layout_marginTop="8dp"

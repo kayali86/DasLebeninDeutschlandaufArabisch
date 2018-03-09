@@ -32,12 +32,14 @@ public class HomeActivity extends AppCompatActivity {
 
     // Call Main Test
     public void getMainTest(View view) {
+        onPause();
         Intent mainIntent = new Intent(this, MainActivity.class);
         startActivity(mainIntent);
     }
 
     // Call Images Test
     public void getImagesTest(View view) {
+        onPause();
         Intent mainIntent = new Intent(this, ImagesTestActivity.class);
         startActivity(mainIntent);
     }

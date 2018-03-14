@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.AlertDialog;
+import android.text.method.ScrollingMovementMethod;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -56,13 +57,19 @@ public class ImagesTestActivity extends AppCompatActivity {
 
         imageV = findViewById(R.id.image_view);
         imagesAnswer1 = findViewById(R.id.images_answer1);
+        imagesAnswer1.setMovementMethod(new ScrollingMovementMethod());
         imagesAnswer2 = findViewById(R.id.images_answer2);
+        imagesAnswer2.setMovementMethod(new ScrollingMovementMethod());
         imagesAnswer3 = findViewById(R.id.images_answer3);
+        imagesAnswer3.setMovementMethod(new ScrollingMovementMethod());
         imagesAnswer4 = findViewById(R.id.images_answer4);
+        imagesAnswer4.setMovementMethod(new ScrollingMovementMethod());
 
         imagesScoreV = findViewById(R.id.images_score);
         imagesQuestion = findViewById(R.id.images_question);
+        imagesQuestion.setMovementMethod(new ScrollingMovementMethod());
         imagesQuestionAr = findViewById(R.id.images_questionAr);
+        imagesQuestionAr.setMovementMethod(new ScrollingMovementMethod());
 
         imageNR = new int[]{R.drawable.images_test_0,R.drawable.images_test_1,R.drawable.images_test_2,R.drawable.images_test_3,R.drawable.images_test_4,R.drawable.images_test_5,R.drawable.images_test_6,R.drawable.images_test_7,R.drawable.images_test_8,R.drawable.images_test_9};
 
@@ -77,7 +84,7 @@ public class ImagesTestActivity extends AppCompatActivity {
         imagesAnswer1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (imagesAnswer1.getText() == imagesCorrectAnswer) {
+                if (imagesAnswer1.getText().toString().equalsIgnoreCase(imagesCorrectAnswer)) {
                     mQuestionsClass.addImagesScore();
                     imagesScoreV.setText(getString(R.string.score, mQuestionsClass.getImagesScore()));
                     setRightMessageToast();
@@ -94,7 +101,7 @@ public class ImagesTestActivity extends AppCompatActivity {
         imagesAnswer2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (imagesAnswer2.getText() == imagesCorrectAnswer) {
+                if (imagesAnswer2.getText().toString().equalsIgnoreCase(imagesCorrectAnswer)) {
                     mQuestionsClass.addImagesScore();
                     imagesScoreV.setText(getString(R.string.score, mQuestionsClass.getImagesScore()));
                     setRightMessageToast();
@@ -111,7 +118,7 @@ public class ImagesTestActivity extends AppCompatActivity {
         imagesAnswer3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (imagesAnswer3.getText() == imagesCorrectAnswer) {
+                if (imagesAnswer3.getText().toString().equalsIgnoreCase(imagesCorrectAnswer)) {
                     mQuestionsClass.addImagesScore();
                     imagesScoreV.setText(getString(R.string.score, mQuestionsClass.getImagesScore()));
                     setRightMessageToast();
@@ -128,7 +135,7 @@ public class ImagesTestActivity extends AppCompatActivity {
         imagesAnswer4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (imagesAnswer4.getText() == imagesCorrectAnswer) {
+                if (imagesAnswer4.getText().toString().equalsIgnoreCase(imagesCorrectAnswer)) {
                     mQuestionsClass.addImagesScore();
                     imagesScoreV.setText(getString(R.string.score, mQuestionsClass.getImagesScore()));
                     setRightMessageToast();

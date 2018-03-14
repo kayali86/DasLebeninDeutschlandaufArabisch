@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:paddingRight="16dp"
 android:paddingLeft="16dp"
+    android:orientation="vertical"
 android:background="@drawable/background"
 tools:context="com.example.android.daslebenindeutschlandaufarabisch.ImagesTestActivity">
-
-    <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -54,7 +50,8 @@ tools:context="com.example.android.daslebenindeutschlandaufarabisch.ImagesTestAc
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="0dp"
+            android:layout_weight="3"
             android:layout_marginLeft="4dp"
             android:layout_marginRight="4dp"
             android:id="@+id/image_view" />
@@ -62,7 +59,9 @@ tools:context="com.example.android.daslebenindeutschlandaufarabisch.ImagesTestAc
             <TextView
                 android:id="@+id/images_question"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1.2"
+                android:scrollbars="vertical"
                 android:layout_marginTop="4dp"
                 android:layout_marginLeft="4dp"
                 android:layout_marginRight="4dp"
@@ -72,13 +71,14 @@ tools:context="com.example.android.daslebenindeutschlandaufarabisch.ImagesTestAc
                 android:textColor="@android:color/black"
                 android:gravity="start"
                 android:textAlignment="textStart"
-                android:minLines="4"
                 android:text="@string/questionTxtView" />
 
             <TextView
                 android:id="@+id/images_questionAr"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1.2"
+                android:scrollbars="vertical"
                 android:layout_marginLeft="4dp"
                 android:layout_marginRight="4dp"
                 android:paddingRight="4dp"
@@ -87,12 +87,13 @@ tools:context="com.example.android.daslebenindeutschlandaufarabisch.ImagesTestAc
                 android:gravity="right"
                 android:textColor="@android:color/black"
                 android:textDirection="rtl"
-                android:minLines="4"
                 android:text="@string/questionTxtView" />
 
             <CheckedTextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scrollbars="vertical"
                 android:layout_marginRight="4dp"
                 android:layout_marginLeft="4dp"
                 android:background="#1a1a1a"
@@ -100,43 +101,44 @@ tools:context="com.example.android.daslebenindeutschlandaufarabisch.ImagesTestAc
                 android:gravity="center"
                 android:textAlignment="center"
                 android:textColor="@android:color/white"
-                android:minLines="2"
                 android:text="@string/Choice1TxtView" />
 
             <CheckedTextView
                 android:id="@+id/images_answer2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scrollbars="vertical"
                 android:layout_marginRight="4dp"
                 android:layout_marginLeft="4dp"
                 android:background="@android:color/holo_red_dark"
                 android:gravity="center"
                 android:textAlignment="center"
-                android:minLines="2"
                 android:text="@string/Choice2TxtView" />
 
             <CheckedTextView
                 android:id="@+id/images_answer3"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scrollbars="vertical"
                 android:layout_marginRight="4dp"
                 android:layout_marginLeft="4dp"
                 android:background="@android:color/holo_orange_dark"
                 android:gravity="center"
                 android:textAlignment="center"
-                android:minLines="2"
                 android:text="@string/Choice3TxtView" />
 
             <CheckedTextView
                 android:id="@+id/images_answer4"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scrollbars="vertical"
                 android:layout_marginRight="4dp"
                 android:layout_marginLeft="4dp"
                 android:background="@android:color/holo_orange_light"
                 android:gravity="center"
                 android:textAlignment="center"
-                android:minLines="2"
                 android:text="@string/Choice4TxtView" />
-    </LinearLayout>
-</ScrollView>
+</LinearLayout>

@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.text.method.ScrollingMovementMethod;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -66,13 +67,19 @@ public class MainActivity extends AppCompatActivity {
 
 // Defining Views by id
         answer1 =  findViewById(R.id.answer1);
+        answer1.setMovementMethod(new ScrollingMovementMethod());
         answer2 =  findViewById(R.id.answer2);
+        answer2.setMovementMethod(new ScrollingMovementMethod());
         answer3 =  findViewById(R.id.answer3);
+        answer3.setMovementMethod(new ScrollingMovementMethod());
         answer4 =  findViewById(R.id.answer4);
+        answer4.setMovementMethod(new ScrollingMovementMethod());
 
         scoreV =  findViewById(R.id.score);
         question =  findViewById(R.id.question);
+        question.setMovementMethod(new ScrollingMovementMethod());
         questionAr =  findViewById(R.id.questionAr);
+        questionAr.setMovementMethod(new ScrollingMovementMethod());
 
 // Set score text
         scoreV.setText(getString(R.string.score, mQuestions.getScore()));
@@ -84,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
         answer1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
-                if (answer1.getText() == correctAnswer){
+                if (answer1.getText().toString().equalsIgnoreCase(correctAnswer) ){
                     mQuestions.addScore();
                     scoreV.setText(getString(R.string.score, mQuestions.getScore()));
                     setRightMessageToast();
@@ -101,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
         answer2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
-                if (answer2.getText() == correctAnswer){
+                if (answer2.getText().toString().equalsIgnoreCase(correctAnswer)){
                     mQuestions.addScore();
                     scoreV.setText(getString(R.string.score, mQuestions.getScore()));
                     setRightMessageToast();
@@ -118,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
         answer3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
-                if (answer3.getText() == correctAnswer){
+                if (answer3.getText().toString().equalsIgnoreCase(correctAnswer)){
                     mQuestions.addScore();
                     scoreV.setText(getString(R.string.score, mQuestions.getScore()));
                     setRightMessageToast();
@@ -137,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
         answer4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
-                if (answer4.getText() == correctAnswer){
+                if (answer4.getText().toString().equalsIgnoreCase(correctAnswer)){
                     mQuestions.addScore();
                     scoreV.setText(getString(R.string.score, mQuestions.getScore()));
                     setRightMessageToast();

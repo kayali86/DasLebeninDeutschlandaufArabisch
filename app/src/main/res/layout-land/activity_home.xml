@@ -20,6 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
+        android:paddingStart="16dp"
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
         android:text="@string/testSelection"
@@ -36,6 +37,7 @@
         android:layout_marginRight="16dp"
         android:layout_marginBottom="4dp"
         android:onClick="getMainTest"
+        android:gravity="center_vertical"
         android:orientation="horizontal">
 
     <LinearLayout
@@ -52,6 +54,7 @@
             android:textSize="20sp"
             android:textStyle="bold"
             android:paddingLeft="16dp"
+            android:paddingStart="16dp"
             android:textColor="@android:color/white" />
 
         <TextView
@@ -86,6 +89,7 @@
         android:layout_marginBottom="4dp"
         android:onClick="getImagesTest"
         android:background="@drawable/border_black"
+        android:gravity="center_vertical"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -102,7 +106,8 @@
                 android:textSize="21sp"
                 android:textStyle="bold"
                 android:textColor="@android:color/black"
-                android:paddingLeft="16dp" />
+                android:paddingLeft="16dp"
+                android:paddingStart="16dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
